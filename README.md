@@ -15,15 +15,6 @@ The `EightQueens` class contains methods to solve the problem and display the so
 
 Included is a Dockerfile to facilitate the deployment of the program. The Dockerfile sets up the environment using OpenJDK 11, compiles the Java source code, and runs the program inside a Docker container.
 
-## Usage
-
-https://hub.docker.com/repository/docker/alexandrugabrielgrecu/chess/general
-To run the program locally, ensure you have Docker installed and execute the following commands:
-
-```bash
-docker pull alexandrugabrielgrecu/chess
-docker run alexandrugabrielgrecu/chess
-
 ## Resources
 GeeksforGeeks - 8 Queen Problem
 http://www.datagenetics.com/blog/august42012/
@@ -31,3 +22,13 @@ https://medium.com/cracking-the-coding-interview-in-ruby-python-and/8-12-the-8-q
 
 ## Credits
 This project draws inspiration from various online resources and aims to provide a practical implementation of the Eight Queens problem using Java and Docker.
+
+## Usage
+
+https://hub.docker.com/repository/docker/alexandrugabrielgrecu/chess/general
+
+To run the program locally, ensure you have Docker installed and execute the following commands:
+
+```bash
+docker pull alexandrugabrielgrecu/chess
+docker run alexandrugabrielgrecu/chess
