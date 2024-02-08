@@ -41,11 +41,20 @@ public class EightQueens {
 
                 if (solveNQUtil(col + 1))
                     return true;
+
+                board[i][col] = 0;
             }
         }
         return false;
     }
 
+    void printSolution() {
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < N; j++)
+                System.out.print(" " + board[i][j] + " ");
+            System.out.println();
+        }
+    }
 
 
     public static void main(String[] args) {
