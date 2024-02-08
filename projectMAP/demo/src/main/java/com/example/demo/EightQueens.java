@@ -13,14 +13,40 @@ public class EightQueens {
             if (board[row][i] == 1)
                 return false;
 
-        // Verifica partea superioara a diagonalei stanga
+
         for (i = row, j = col; i >= 0 && j >= 0; i--, j--)
             if (board[i][j] == 1)
                 return false;
 
 
+        for (i = row, j = col; j >= 0 && i < N; i++, j--)
+            if (board[i][j] == 1)
+                return false;
+
         return true;
+
     }
+
+
+    boolean solveNQUtil(int col) {
+
+        if (col >= N)
+            return true;
+
+
+        for (int i = 0; i < N; i++) {
+            if (isSafe(i, col)) {
+                board[i][col] = 1;
+
+
+                if (solveNQUtil(col + 1))
+                    return true;
+            }
+        }
+        return false;
+    }
+
+
 
     public static void main(String[] args) {
         EightQueens queen = new EightQueens();
