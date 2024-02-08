@@ -132,7 +132,7 @@ public class EightQueens {
         if (solutions.isEmpty()) {
             System.out.println("Nu exista solutie");
         } else {
-            System.out.println("Numarul total de solutii: " + solutions.size());
+            System.out.println("Nr total de solutii: " + solutions.size());
             for (int i = 0; i < solutions.size(); i++) {
                 System.out.println("Solutia " + (i + 1) + ":");
                 printSolution(solutions.get(i));
