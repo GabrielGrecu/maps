@@ -125,11 +125,35 @@ public class EightQueens {
         }
     }
 
+    void findNumberOfSolutions() {
+        int[][] board = new int[N][N];
+        rezolveQueen(board, 0);
+
+        if (solutions.isEmpty()) {
+            System.out.println("Nu exista solutie");
+        } else {
+            System.out.println("Numarul total de solutii: " + solutions.size());
+            for (int i = 0; i < solutions.size(); i++) {
+                System.out.println("Solutia " + (i + 1) + ":");
+                printSolution(solutions.get(i));
+                System.out.println();
+            }
+        }
+    }
+
+    void printSolution(int[][] board) {
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < N; j++)
+                System.out.print(" " + board[i][j] + " ");
+            System.out.println();
+        }
+    }
+
 
     public static void main(String[] args) {
         EightQueens queen = new EightQueens();
         queen.rezolveQueen();
         System.out.println();
-        //queen.solveNQ2();
+        queen.findNumberOfSolutions();
     }
 }
