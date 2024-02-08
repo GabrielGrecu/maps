@@ -16,8 +16,11 @@ The `EightQueens` class contains methods to solve the problem and display the so
 Included is a Dockerfile to facilitate the deployment of the program. The Dockerfile sets up the environment using OpenJDK 11, compiles the Java source code, and runs the program inside a Docker container.
 
 ## Resources
+
 GeeksforGeeks - 8 Queen Problem
+
 http://www.datagenetics.com/blog/august42012/
+
 https://medium.com/cracking-the-coding-interview-in-ruby-python-and/8-12-the-8-queens-problem-with-solutions-ruby-javascript-and-python-409cea33b5b3
 
 ## Credits
