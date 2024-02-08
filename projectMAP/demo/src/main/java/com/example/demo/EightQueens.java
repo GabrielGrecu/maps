@@ -56,9 +56,19 @@ public class EightQueens {
         }
     }
 
+    boolean solveNQ() {
+        if (!solveNQUtil(0)) {
+            System.out.println("Nu există soluție");
+            return false;
+        }
+
+        printSolution();
+        return true;
+    }
+
 
     public static void main(String[] args) {
         EightQueens queen = new EightQueens();
-
+        queen.solveNQ();
     }
 }
